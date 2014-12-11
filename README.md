@@ -1,8 +1,8 @@
-# CodeMirror Kitchean
+# CodeMirror Kitchen
 
 ## What's this?
 
-Customised build of codemirror.
+Kitchen to build your own codemirror editor.
 
 ## Use
 
@@ -20,7 +20,14 @@ Take it.
 
 ```
 <script src='/dist/bundle.js'></script>
+<script>
+window.onload = function(){
+  window.createMyEditor(document.body, {});
+}
+</script>
 ```
+
+See bundler.js and demo/index.html
 
 ## Load by webpack
 
