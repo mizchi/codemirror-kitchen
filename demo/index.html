@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown Editor test</title>
+  <meta charset='utf-8' />
+</head>
+
+<script src='../dist/bundle.js'></script>
+<script charset="utf-8">
+window.addEventListener('load', function(){
+  window.editor = createMyEditor(document.body);
+  editor.on('change', function(){
+    console.log(editor.cm.getValue());
+  });
+});
+</script>
+
+<body>
+</body>
+</html>
